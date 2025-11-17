@@ -3,6 +3,12 @@
 @import './blocks/card';
 @import './blocks/stars';
 
+body {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  margin: 0;
+}
+
 .catalogue {
   padding: 50px 40px;
   display: grid;
@@ -23,7 +29,7 @@
     z-index: 10;
 
     & .card__title {
-      color: #34568b;
+      color: $main-text-hover;
     }
   }
 }
