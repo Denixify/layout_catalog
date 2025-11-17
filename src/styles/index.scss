@@ -1,3 +1,53 @@
-body {
-  margin: 0;
+@import '../styles/utils/variables';
+@import './blocks/nav';
+@import './blocks/card';
+@import './blocks/stars';
+
+.catalogue {
+  padding: 50px 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  gap: 46px 48px;
+
+  place-content: center;
+
+  place-items: center;
+}
+
+.card {
+  transition: transform 300ms ease;
+
+  &:hover {
+    transform: scale(1.2);
+    position: relative;
+    z-index: 10;
+
+    & .card__title {
+      color: #34568b;
+    }
+  }
+}
+
+@media (max-width: 487px) {
+  .catalogue {
+    grid-template-columns: repeat(1, 200px);
+  }
+}
+
+@media (min-width: 488px) {
+  .catalogue {
+    grid-template-columns: repeat(2, 200px);
+  }
+}
+
+@media (min-width: 768px) {
+  .catalogue {
+    grid-template-columns: repeat(3, 200px);
+  }
+}
+
+@media (min-width: 1024px) {
+  .catalogue {
+    grid-template-columns: repeat(4, 200px);
+  }
 }
