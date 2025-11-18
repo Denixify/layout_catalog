@@ -23,6 +23,7 @@
 
   &__list {
     display: flex;
+    gap: 20px;
     justify-content: flex-end;
     list-style: none;
     padding: 0;
@@ -36,7 +37,6 @@
     font-size: 12px;
     line-height: 60px;
     position: relative;
-    margin-right: 20px;
     display: inline-block;
     transition: color 300ms ease;
 
@@ -59,8 +59,4 @@
       }
     }
   }
-}
-
-.menu__item:last-child .menu__link {
-  margin-right: 0;
 }

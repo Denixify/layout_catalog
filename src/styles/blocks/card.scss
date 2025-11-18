@@ -88,8 +88,9 @@
     text-transform: uppercase;
     text-decoration: none;
 
-    transition: color 300ms ease;
-    transition: background-color 300ms ease;
+    transition:
+      color 300ms ease,
+      background-color 300ms ease;
 
     &:hover {
       background-color: $white;
